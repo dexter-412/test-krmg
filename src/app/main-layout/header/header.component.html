@@ -1,0 +1,50 @@
+<header id="header">
+  <div class="container">
+    <div class="header-content-wrapper flex space-between align-center">
+      <div class="logo"><img src="assets/images/logo.png" alt=""></div>
+      <div class="slog">Platform user`s choice</div>
+      <div class="menu hide-on-med">
+        <ul class="flex space-between align-center">
+          <li><a href="" [routerLink]="'/'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }">Users</a></li>
+          <li><a href="" [routerLink]="'/autorization'" [routerLinkActive]="'active'">Authorization</a></li>
+          <li><a href="" [routerLink]="'/admin'" [routerLinkActive]="'active'">Admin</a></li>
+        </ul>
+      </div>
+      <div class="button hide-on-med">
+        <a href="">GO TO CHALLENGE</a>
+      </div>
+      <div class="languages hide-on-med">
+        <span>EN</span>
+        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+      </div>
+      <div class="show-on-med">
+        <mat-sidenav-container
+          class="example-container" (backdropClick)="close('backdrop')" >
+          <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+            <p>
+              <button mat-button style="background: none; border: none; color: #1c8ece; outline: none; font-size: 16px" (click)="close('toggle button')"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <span class="languages">
+              <span>EN</span>
+              <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+            </span>
+            </p>
+            <div class="button">
+              <a href="">GO TO CHALLENGE</a>
+            </div>
+            <div class="menu mobile-menu">
+              <ul class="">
+                <li><a href="" [routerLink]="'/'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }">Users</a></li>
+                <li><a href="" [routerLink]="'/autorization'" [routerLinkActive]="'active'">Authorization</a></li>
+                <li><a href="" [routerLink]="'/admin'" [routerLinkActive]="'active'">Admin</a></li>
+              </ul>
+            </div>
+          </mat-sidenav>
+
+          <mat-sidenav-content>
+            <button style="background: none; border: none; color: #fff; outline: none; font-size: 16px" mat-button (click)="sidenav.open()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+      </div>
+    </div>
+  </div>
+</header>

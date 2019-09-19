@@ -1,0 +1,107 @@
+#top-banner {
+  background: #0072bc;
+  padding: 45px 0 60px;
+  overflow: hidden;
+
+  .top-content {
+    font-size: 14px;
+    color: var(--color-white);
+
+      .text {
+        max-width: 700px;
+      }
+  }
+
+  .middle-content {
+    position: relative;
+
+    &:before {
+
+      @media (max-width: 425px) {
+        display: none;
+      }
+
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 3000px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #338ec9;
+      z-index: 0;
+    }
+    .items-wrapper {
+      max-width: 980px;
+      min-width: 880px;
+      margin: 110px auto 140px;
+      position: relative;
+      z-index: 1;
+
+      @media (max-width: 768px) {
+        min-width: unset;
+      }
+
+      @media (max-width: 425px) {
+        display: block;
+        text-align: center;
+        margin: 50px auto 70px;
+
+        .item, .description {
+          max-width: none !important;
+          margin-top: 0 !important;
+          margin-bottom: 30px;
+        }
+      }
+
+      .item {
+        text-align: center;
+        max-width: 200px;
+
+        &.active {
+          background: #1b5eaa;
+          border-radius: 7px;
+          padding: 10px 15px;
+          box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+          .card-title {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+
+          .card-img {
+            margin-bottom: 15px;
+          }
+
+          .card-description {
+            font-size: 12px;
+          }
+        }
+
+        &:not(.active) {
+          margin-top: 114px;
+        }
+
+        .circle {
+          background: var(--color-white);
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin: 0 auto 7px;
+        }
+        .description {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+
+  .btn-scroll-wrapper {
+    text-align: center;
+    font-size: 12px;
+    img {
+      vertical-align: middle;
+      margin: 0 7px;
+    }
+  }
+}

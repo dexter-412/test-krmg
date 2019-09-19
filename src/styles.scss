@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Import material styles
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Varriables
+
+:root {
+  --color-white: #fff;
+  --main-font:  "Segoe UI";
+  --main-color: #1c8ece;
+}
+
+// Main styles
+
+
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mat-drawer-container {
+  z-index: 999 !important;
+  background: none !important;
+}
+
+mat-sidenav {
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: rgba(0,0,0, .5) !important;
+}
+
+.mat-drawer-inner-container {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 200px !important;
+  background: #fff !important;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  background: none !important;
+}
+
+.hide-on-med {
+  @media (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+.show-on-med {
+  @media (max-width: 768px) {
+    display: block !important;
+  }
+  @media (min-width: 769px) {
+    display: none !important;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var( --main-font);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1170px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.small-container {
+  max-width: 870px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+h2  {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+}

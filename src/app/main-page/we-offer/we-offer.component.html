@@ -1,0 +1,52 @@
+<section id="we-offer">
+  <div class="small-container">
+    <h2>WE OFFER OUR CLIENTS</h2>
+    <div class="subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores assumenda cum cupiditate delectus deleniti deserunt dolor earum eligendi esse explicabo, hic, illum laboriosam laudantium maiores quaerat quam rerum sapiente temporibus vel! Alias delectus molestiae repudiandae.
+    </div>
+
+    <div class="offer-circle-wrapper flex space-between align-center">
+      <div class="offer-circle-column column-1">
+        <div class="item item-1 " (mousemove)="changePosition(1)">
+          <div class="title">Convenient and simple interface</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          </div>
+        </div>
+        <div class="item item-2" (mousemove)="changePosition(2)">
+          <div class="title">Long-term support</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          </div>
+        </div>
+      </div>
+      <div class="offer-circle-column column-2">
+        <div class="dynamic-circle">
+          <div class="circle-wrapper">
+            <div class="active-circle">
+              <div class="circle" [ngStyle]="styles"></div>
+              <span>
+               KPMG <br>consec <br>elit
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offer-circle-column column-3">
+        <div class="item item-3" (mousemove)="changePosition(3)">
+          <div class="title">Reputation, reliability, and safety</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          </div>
+        </div>
+        <div class="item item-4" (mousemove)="changePosition(4)">
+          <div class="title">Transparency</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

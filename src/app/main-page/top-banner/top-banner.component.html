@@ -1,0 +1,88 @@
+<section id="top-banner">
+    <div class="content-wrapper">
+      <div class="top-content small-container">
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi cupiditate facilis veniam voluptate? Animi, at, blanditiis commodi deserunt dolorum eaque id illum iste natus non numquam, placeat saepe sit unde veniam voluptate voluptatem. Nam, nobis!
+        </div>
+
+        <div class="middle-content">
+           <div class="items-wrapper flex space-between ">
+               <div class="item" (click)="changeFlag(0)" *ngIf="!flags[0]; else card1">
+               <div class="circle"></div>
+               <div class="description">ACCEPTANCE OF PROPOSALS</div>
+            </div>
+             <ng-template #card1>
+               <div class="item active" (click)="changeFlag(0)" >
+                 <div class="active-card-wrapper">
+                   <div class="card-title">ACCEPTANCE OF PROPOSALS</div>
+                   <div class="card-img">
+                     <img src="assets/images/card-3.png" alt="">
+                   </div>
+                   <div class="card-description">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque eos maxime odit officia!
+                   </div>
+                 </div>
+               </div>
+             </ng-template>
+             <div class="item" (click)="changeFlag(1)" *ngIf="!flags[1]; else card2">
+               <div class="circle"></div>
+               <div class="description">CHALLENGE</div>
+             </div>
+             <ng-template #card2>
+               <div class="item active" (click)="changeFlag(1)" >
+                 <div class="active-card-wrapper">
+                   <div class="card-title">CHALLENGE</div>
+                   <div class="card-img">
+                     <img src="assets/images/card-3.png" alt="">
+                   </div>
+                   <div class="card-description">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque eos maxime odit officia!
+                   </div>
+                 </div>
+               </div>
+             </ng-template>
+             <div class="item" (click)="changeFlag(2)" *ngIf="!flags[2]; else card3">
+               <div class="circle"></div>
+               <div class="description">CHALLENGE</div>
+             </div>
+             <ng-template #card3>
+             <div class="item active" (click)="changeFlag(2)">
+               <div class="active-card-wrapper">
+                  <div class="card-title">WINNER SELECTION</div>
+                 <div class="card-img">
+                   <img src="assets/images/card-3.png" alt="">
+                 </div>
+                 <div class="card-description">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque eos maxime odit officia!
+                 </div>
+               </div>
+             </div>
+             </ng-template>
+             <div class="item" (click)="changeFlag(3)" *ngIf="!flags[3]; else card4">
+               <div class="circle"></div>
+               <div class="description">PAYMENT FOR THE ASSET</div>
+             </div>
+           </div>
+          <ng-template #card4>
+            <div class="item active" (click)="changeFlag(3)">
+              <div class="active-card-wrapper">
+                <div class="card-title">PAYMENT FOR THE ASSET</div>
+                <div class="card-img">
+                  <img src="assets/images/card-3.png" alt="">
+                </div>
+                <div class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque eos maxime odit officia!
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+
+        <div class="btn-scroll-wrapper">
+          <span>Scroll down</span>
+          <img src="assets/images/scroll-btn.png" alt="">
+          <span>to see more</span>
+        </div>
+      </div>
+    </div>
+</section>
